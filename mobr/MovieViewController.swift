@@ -13,7 +13,7 @@ class MovieViewController: UIViewController {
     
     var moviePlayer:MPMoviePlayerController!
     var companyId: Int?
-    var url: NSURL!
+    var path: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +22,15 @@ class MovieViewController: UIViewController {
         SVProgressHUD.showWithStatus("Now Loading...")
         
         if (companyId == nil) {
-          url = NSURL(string: "https://kid84interactive.herokuapp.com/img/atrae.mp4")!  
+            path = "atrae_company"
         } else if (companyId == 0) {
-          url = NSURL(string: "https://kid84interactive.herokuapp.com/img/atrae.mp4")!
+            path = "atrae_company"
         } else {
-          url = NSURL(string: "https://kid84.herokuapp.com/images/other_company.mp4")!
+            path = "other_company"
         }
         
-        self.moviePlayer = MPMoviePlayerController(contentURL: url)
+        let fileURL = NSBundle.mainBundle().URLForResource(path, withExtension: "mp4")
+        self.moviePlayer = MPMoviePlayerController(contentURL: fileURL)
         self.moviePlayer.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         self.view.addSubview(moviePlayer.view)
         

@@ -24,6 +24,8 @@
 		02FFABBF1A8CECBB00654B4C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 02FFABBE1A8CECBB00654B4C /* play.png */; };
 		02FFABC11A8CF46100654B4C /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = 02FFABC01A8CF46100654B4C /* other.png */; };
 		55966A2F317FB3838ACAFFDC /* libPods-mobr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0602D1CB0CCA7F6B3CFACB /* libPods-mobr.a */; };
+		6881C3EF1A8DC3A300727122 /* atrae_company.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6881C3EE1A8DC3A300727122 /* atrae_company.mp4 */; };
+		6881C3F11A8DC3B500727122 /* other_company.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6881C3F01A8DC3B500727122 /* other_company.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		02FFABC01A8CF46100654B4C /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
 		312D402E56B1BF277ED9D99F /* Pods-mobr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobr/Pods-mobr.debug.xcconfig"; sourceTree = "<group>"; };
 		5B6BECB2150D552F35F6543C /* Pods-mobr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobr.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobr/Pods-mobr.release.xcconfig"; sourceTree = "<group>"; };
+		6881C3EE1A8DC3A300727122 /* atrae_company.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = atrae_company.mp4; sourceTree = "<group>"; };
+		6881C3F01A8DC3B500727122 /* other_company.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = other_company.mp4; sourceTree = "<group>"; };
 		AD0602D1CB0CCA7F6B3CFACB /* libPods-mobr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,7 +134,9 @@
 				02FFABBE1A8CECBB00654B4C /* play.png */,
 				02FFABBC1A8CEB4C00654B4C /* atrae-movie1.png */,
 				02FFABBA1A8CE9F800654B4C /* atrae_movie.png */,
+				6881C3F01A8DC3B500727122 /* other_company.mp4 */,
 				02FFABC01A8CF46100654B4C /* other.png */,
+				6881C3EE1A8DC3A300727122 /* atrae_company.mp4 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 				TargetAttributes = {
 					02FFAB8E1A8CD60B00654B4C = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9GZ6JW4C57;
 					};
 					02FFABA31A8CD60C00654B4C = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -253,7 +260,9 @@
 			files = (
 				02FFABBF1A8CECBB00654B4C /* play.png in Resources */,
 				02FFAB9A1A8CD60B00654B4C /* Main.storyboard in Resources */,
+				6881C3F11A8DC3B500727122 /* other_company.mp4 in Resources */,
 				02FFABB91A8CE5F500654B4C /* screen.jpg in Resources */,
+				6881C3EF1A8DC3A300727122 /* atrae_company.mp4 in Resources */,
 				02996BB31A8CF72D00E3F3BE /* right.png in Resources */,
 				02FFABBD1A8CEB4C00654B4C /* atrae-movie1.png in Resources */,
 				02FFAB9F1A8CD60B00654B4C /* LaunchScreen.xib in Resources */,
@@ -439,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mobr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "mobr/mobr-Bridging-Header.h";
@@ -451,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mobr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "mobr/mobr-Bridging-Header.h";
